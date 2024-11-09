@@ -1,18 +1,20 @@
-"use client";
-import React from "react";
-import { FloatingNav } from "./ui/floating-navbar";
+"use client"
+import React from 'react'
+import { Button } from './ui/moving-border'
+import Link from 'next/link'
 
-export default function Navbar() {
-  const navItems = [
-    { name: "Home", link: "/" },
-    { name: "About", link: "/about" },
-    { name: "Testimonails", link: "/testimonials" },
-  ];
-
+const navbar = () => {
   return (
-    <div className="relative w-full">
-      <FloatingNav navItems={navItems} />
-    </div>
-  );
+    <>
+      <nav className='text-center mt-8 bg-transparent'>
+        <a href="/" className='mr-6 font-bold text-2xl'>Home</a>
+        <a href="/about" className='mr-6 font-bold text-2xl'>About</a>
+        <a href="/Experience" className='mr-6 font-bold text-2xl'>Experience</a>
+       <Link href="/projects"><Button className='font-bold text-2xl p-6'>Projects  </Button></Link> 
+
+      </nav>
+    </>
+  )
 }
 
+export default navbar

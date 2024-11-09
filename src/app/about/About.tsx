@@ -1,6 +1,6 @@
 
 import React from "react";
-import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
+import { BentoGrid, BentoGridItem } from "../components/ui/bento-grid";
 import {
   IconArrowWaveRightUp,
   IconBoxAlignRightFilled,
@@ -11,7 +11,7 @@ import {
   IconTableColumn,
 } from "@tabler/icons-react";
 
-export function Grid() {
+export function About() {
   return (
     <div className="" id="about">
       <h1 className="text-white text-5xl font-bold mb-5 text-center">About Me</h1>
