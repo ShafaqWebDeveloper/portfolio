@@ -1,10 +1,10 @@
 import React from 'react'
-import { Projects } from './projects'
+import { Project } from './project'
 
 function page() {
   return (
     <div className='mt-20'>
-      <Projects/>
+      <Project/>
     </div>
   )
 }
